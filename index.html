@@ -42,6 +42,22 @@
             margin-bottom: 1rem;
             display: block;
         }
+        /* Estilos da imagem que estavam faltando */
+        .imagem-post {
+            text-align: center;
+            margin: 1.5rem 0;
+        }
+        .imagem-post img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .legenda {
+            font-size: 0.9em;
+            color: #7f8c8d;
+            margin-top: 0.5rem;
+        }
         footer {
             text-align: center;
             padding: 1rem;
@@ -60,25 +76,38 @@
     <main>
         <!-- DICA: Para adicionar uma nova semana, copie todo o bloco <article> e cole aqui em cima, logo abaixo do <main> -->
 
-    <article>
-        <h2>Semana 0: Expectativas para a Disciplina</h2>
-        <span class="data-post">Publicado em: 11 de Agosto de 2026</span>
-        <p>Acredito que essa matéria abordata as aplicações práticas que vemos na tecnologia hoje.</p>
-        <p>Minha principal expectativa é entender a fundo como os algoritmos manipulam e interpretam o mundo visual. Como tenho bastante interesse na área de dados e em aplicações de inteligência artificial, sei que construir uma base sólida sobre como o computador realmente enxerga e processa matrizes de pixels é fundamental antes de aplicar modelos mais complexos.</p>
-    </article>
-
         <article>
             <h2>Semana 1: Introdução à Computação Visual</h2>
             <span class="data-post">Publicado em: 18 de Agosto de 2026</span>
-            <p>Um marco interessante na história da computação é que a primeira imagem digital foi criada em 1957, muito antes do surgimento das câmeras digitais. O pesquisador Russell Kirsch digitalizou uma fotografia de seu filho em uma pequena matriz de 176x176 pixels. Essa conversão pioneira de uma foto para valores numéricos foi fundamental para o desenvolvimento da visão computacional.</p>
-            <img src="image_0.png" alt="A primeira imagem digital da história, mostrando o rosto pixelado de Walden Kirsch em tons de cinza." style="max-width: 100%; height: auto; border-radius: 8px; margin: 10px 0; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
-            <p class="legenda">Digitalização original de 1957 por Russell Kirsch.</p>
-            <p>Foi esse passo inicial de ensinar a máquina a processar pixels que viabilizou as tecnologias atuais, como o reconhecimento de padrões e a análise de imagens médicas por inteligência artificial.</p>
-            <p><a href="[https://www.nist.gov/image-processing-group/russel-kirsch-pioneer-photo-digitization](https://www.nist.gov/image-processing-group/russel-kirsch-pioneer-photo-digitization)" target="_blank">Saiba mais sobre este marco histórico (em inglês)</a></p></article>
+            <p>Primeira aula da matéria! Discutimos os conceitos básicos de computação gráfica, visão computacional e processamento de imagens. Vimos como essas áreas se conectam em aplicações do mundo real, como efeitos especiais de filmes e carros autônomos.</p>
+            <p>O ambiente de desenvolvimento (Python + OpenCV) já está configurado na minha máquina.</p>
+
+            <hr style="border: 0; border-top: 1px solid #e0e0e0; margin: 2rem 0;">
+
+            <h3 style="color: #2c3e50; font-size: 1.2rem;">Curiosidade da Semana: A Primeira Imagem Digital</h3>
+            
+            <p>Um marco interessante na história da computação é que a primeira imagem digital foi criada em 1957, muito antes do surgimento das câmeras digitais. O pesquisador Russell Kirsch digitalizou uma fotografia de seu filho em uma pequena matriz de 176x176 pixels.</p>
+
+            <div class="imagem-post">
+                <!-- AQUI ESTÁ A REFERÊNCIA PARA A IMAGEM -->
+                <img src="primeira-foto.jpg" alt="A primeira imagem digital da história, mostrando o rosto pixelado de Walden Kirsch em tons de cinza.">
+                <p class="legenda">Digitalização original de 1957 por Russell Kirsch.</p>
+            </div>
+
+            <p>Essa conversão pioneira de uma foto para valores numéricos foi fundamental para o desenvolvimento da visão computacional. Foi esse passo inicial de ensinar a máquina a processar pixels que viabilizou as tecnologias atuais, como o reconhecimento de padrões e a análise de imagens médicas por inteligência artificial.</p>
+        </article>
+
+        <article>
+            <h2>Semana 0: Expectativas para a Disciplina</h2>
+            <span class="data-post">Publicado em: 11 de Agosto de 2026</span>
+            <p>Acredito que essa matéria abordará as aplicações práticas que vemos na tecnologia hoje.</p>
+            <p>Minha principal expectativa é entender a fundo como os algoritmos manipulam e interpretam o mundo visual. Como tenho bastante interesse na área de dados e em aplicações de inteligência artificial, sei que construir uma base sólida sobre como o computador realmente enxerga e processa matrizes de pixels é fundamental antes de aplicar modelos mais complexos.</p>
+        </article>
+
     </main>
 
     <footer>
-        <p>Desenvolvido por [Seu Nome] - Disciplina de Computação Visual (2026)</p>
+        <p>Desenvolvido por Raphael Grizante - Disciplina de Computação Visual (2026)</p>
     </footer>
 
 </body>
